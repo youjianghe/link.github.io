@@ -1,126 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
-	<meta charset="utf-8">
-	<meta name=”renderer” content=”webkit”>
-	<meta http-equiv=”X-UA-Compatible” content=”IE=Edge,chrome=1″ >
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta content="telephone=no" name="format-detection">
-    <meta content="email=no" name="format-detection">
-    <title>LINK</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/common.js"></script>
-</head>
-<body>
-	<div class="logo">My Link</div>
-	<div class="content">
-		<div class="link-group">
-			<div class="classify"><span>我的链接</span><span>设置</span></div>
-			<div class="link">
-				<a href="" title="百度">百度百度百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>My Links</title>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+<body class="myhome">
+	<div class="container-fluid">
+		<div class="row topinfo">
+			<ul class="nav">
+				<li class="pull-left visible-xs visible-sm mnav"><i class="glyphicon glyphicon-th-large"></i>导航</li>
+				<li class="pull-left hidden-xs hidden-sm">My Links</li>
+				<li class="pull-right hidden-xs hidden-sm" onclick="addFavorite2()"><i class="glyphicon glyphicon-star-empty"></i><span>加入收藏</span></li>
+				<li class="pull-right hidden-xs hidden-sm"><i class="glyphicon glyphicon-phone"></i><span>手机版</span></li>
+			</ul>
+		</div>
+		<div class="row wrap">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs hidden-xs hidden-sm" role="tablist" id="classify">
+			  <li role="presentation" class="active">
+			  	<a href="#home" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>我的网址</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#GitHub" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>GitHub</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#freeworld" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>科学上网</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#virtualhost" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>虚拟主机</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#excellentSoft" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>优秀软件</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#study" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>学习</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#minipp" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>微信&小程序</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#FrontEnd" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>前端资源</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#resource" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>福利导航</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#mengma" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-star"></i>母婴</a>
+			  </li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content tab-item">
+			  <div role="tabpanel" class="tab-pane active" id="home">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>常用网址</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://www.cnbeta.com/" target="_blank">cnBeta业界</a></li>
+			  				<li><a href="https://segmentfault.com/" target="_blank">segmentfault</a></li>
+			  				<li><a href="http://www.solidot.org/" target="_blank">奇客资讯</a></li>
+			  				<li><a href="http://www.xuzee.com" target="_blank">旭致</a></li>
+			  				<li><a href="http://www.taobao.com" target="_blank">淘宝网</a></li>
+			  				<li><a href="http://www.tmall.com" target="_blank">天猫</a></li>
+			  			</ul>
+			  		</div>
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>在线影视</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://www.iqiyi.com" target="_blank">爱奇艺</a></li>
+			  				<li><a href="http://www.youku.com" target="_blank">优酷</a></li>
+			  				<li><a href="https://v.qq.com" target="_blank">腾讯视频</a></li>
+			  				<li><a href="http://www.mgtv.com" target="_blank">芒果TV</a></li>
+			  				<li><a href="http://www.rs05.com/" target="_blank">人生05</a></li>
+			  				<li><a href="http://cn163.net/" target="_blank">天天美剧</a></li>
+			  				<li><a href="http://ilxdh.com/" target="_blank">龙轩导航</a></li>
+			  				<li><a href="https://s.click.taobao.com/yQsZtEx" target="_blank">聚划算</a></li>
+			  				<li><a href="https://s.click.taobao.com/t?e=m%3D2%26s%3DPqx0ozo4f%2BwcQipKwQzePCperVdZeJviK7Vc7tFgwiFRAdhuF14FMe%2F%2BDSQZVDVh8sviUM61dt2O2WdZEZ6GEkJhA5FrPx8s8laEura04JD%2Bv65fx0F64k2srC8Mk09eQgZss1jm63jcHtRpEUy6RPalRWTdFmFpJPwiig1bxLMnyi1UQ%2F17I10hO9fBPG8oXH%2BQH9e66Y4%3D" target="_blank">天猫精选</a></li>
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="GitHub">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>GitHub精选</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://code.ciaoca.com/" target="_blank">前端开发仓库</a></li>
+			  				<li><a href="https://github.com/js-cookie/js-cookie" target="_blank">js-cookie</a></li>
+			  				<li><a href="https://github.com/marcuswestin/store.js" target="_blank">store.js</a></li>
+			  				<li><a href="https://github.com/flashlizi/cssrem" target="_blank">cssrem</a></li>
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="freeworld">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>科学上网</span>
+			  			<ul class="nav link">
+			  				<li><a href="https://faststunnel.co/4t3zLP1g" target="_blank">快速安全通道</a></li>
+			  				<li><a href="http://my.yizhihongxing.com/aff.php?aff=813" target="_blank">一支红杏</a></li>
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="virtualhost">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>口碑推荐</span>
+			  			<ul class="nav link">
+			  				<li><a href="https://my.laoxuehost.net/aff.php?aff=539" target="_blank">老薛主机</a></li>
+			  				<li><a href="http://my.henghost.com/aff.php?aff=2079" target="_blank">恒创科技</a></li>
+			  				<li><a href="https://www.fyzhuji.com/aff.php?aff=408" target="_blank">枫叶主机</a></li>
+			  				<li><a href="http://my.cefhost.cn/aff.php?aff=837" target="_blank">优易主机</a></li>
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="excellentSoft">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>推荐</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://www.dayanzai.me/" target="_blank">大眼仔</a></li>
+			  				<li><a href="https://www.portablesoft.org/" target="_blank">精品绿色便携软件</a></li>
+			  				<li><a href="http://hrtsea.com/" target="_blank">心海e站-烈火</a></li>
+			  				<li><a href="http://www.dafanshu.com/" target="_blank">大番薯U盘启动</a></li>
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="study">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>学习</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://www.imooc.com/" target="_blank">慕课网</a></li>			  			
+			  				<li><a href="http://www.swoole.com/" target="_blank" title="PHP的异步、并行、高性能网络通信引擎">Swoole</a></li>			  			
+			  				<li><a href="http://www.cnblogs.com/didi/p/3926660.html" target="_blank" title="FlexSlider插件的详细设置参数">FlexSlider设置参数</a></li>			  			
+			  				<li><a href="http://youmightnotneedjquery.com/" target="_blank" title="youmightnotneedjquery">youmightnotneedjquery</a></li>			  			
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="minipp">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>微信</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://chuansong.me/" target="_blank">传送门</a></li>		  			
+			  			</ul>
+			  		</div>
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>小程序</span>
+			  			<ul class="nav link">
+			  				<li><a href="https://minapp.com/miniapp/" target="_blank">知晓程序</a></li>		  			
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="FrontEnd">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>后台模板</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://x.xuebingsi.com/" target="_blank">X-admin</a></li>			  			
+			  				<li><a href="http://www.h-ui.net/H-ui.admin.shtml" target="_blank">H-ui.admin</a></li>			  			
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="resource">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>福利资源</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://www.tucaofuli.net/" target="_blank">吐槽福利</a></li>			  			
+			  				<li><a href="http://www.dsqnw.com/" target="_blank">屌丝青年网</a></li>			  			
+			  			</ul>
+			  		</div>
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>壹零贰肆</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://t66y.com/" target="_blank">1024</a></li>			  			
+			  			</ul>
+			  		</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="mengma">
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>育儿网站</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://www.xxbmm.com/" target="_blank">小小包麻麻</a></li>			  			
+			  				<li><a href="http://www.iyaya.com/" target="_blank">丫丫网</a></li>			  			
+			  				<li><a href="http://www.lamabang.com/" target="_blank">辣妈帮</a></li>		  			
+			  				<li><a href="http://www.qinbei.com/" target="_blank">亲贝网</a></li>		  			
+			  				<li><a href="http://www.babytree.com/" target="_blank">宝宝树</a></li>		  			
+			  				<li><a href="http://www.61koudai.com/" target="_blank">口袋育儿</a></li>		  			
+			  				<li><a href="http://www.babycenter.cn/" target="_blank">宝宝中心中文网</a></li>			  			
+			  				<li><a href="http://www.aibaimm.com/portal.php" target="_blank">爱败妈妈</a></li>			  			
+			  				<li><a href="http://www.enmuo.com/" target="_blank">么么亲子网</a></li>			  			
+			  			</ul>
+			  		</div>
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>儿童教育</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://www.youthmba.com/" target="_blank">少年商学院</a></li>		  			
+			  			</ul>
+			  		</div>
+			  		<div class="item">
+			  			<span class="linkname"><i class="glyphicon glyphicon-cog"></i>行业网站</span>
+			  			<ul class="nav link">
+			  				<li><a href="http://www.myguancha.com/" target="_blank">母婴行业观察</a></li>		  			
+			  				<li><a href="http://www.yyt360.com/" target="_blank">婴童产业网</a></li>		  			
+			  				<li><a href="http://www.beibei.com/" target="_blank">贝贝网(电商)</a></li>		  			
+			  				<li><a href="http://3y.uu456.com/" target="_blank">3亿文库</a></li>		  			
+			  			</ul>
+			  		</div>
+			  </div>
 			</div>
 		</div>
-		<div class="link-group">
-			<div class="classify"><span>我的链接</span></div>
-			<div class="link">
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-				<a href="" title="百度">百度</a>
-			</div>
+		<div class="row footer">
+			<p class="col-xs-12"><a href="https://my.laoxuehost.net/aff.php?aff=539" target="_blank"><img src="http://www.laoxuehost.com/wp-content/themes/laoxue/static/img/aff02_728_80.png" alt="老薛主机" title="老薛主机7.5折优惠码：lx25" class="center-block"></a></p>
+			<p class="col-xs-12 text-center">© 2017. xuzee.com. All Rights Reserved. 鄂ICP备10011108号. 邮箱:##@qq.com</p>
 		</div>
 	</div>
-
-	<div class="nav">
-		<ul>
-			<li><a href="">snkf </a></li>
-			<li><a href="">snkf </a></li>
-			<li><a href="">snkf </a></li>
-			<li><a href="">snkf </a></li>
-			<li><a href="javascript:;">TOP</a></li>
-		</ul>
-	</div>
-
-
-	<script>
-		window.onload = function(){
-			
-		}
-	</script>
 </body>
 </html>
